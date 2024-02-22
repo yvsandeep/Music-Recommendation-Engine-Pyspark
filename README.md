@@ -12,7 +12,7 @@ With the evolution of the music industry from physical CDs to cloud-based stream
 - **Methods:** Utilizing Matrix Factorization Algorithm - ALS, along with Content-based Filtering methods like TFIDF, LDA, and Word2Vec.
 - **Tools:** Developed using Python, PySpark, Amazon EMR, S3, and Streamlit.
 - **Project Design:**
-![Project Design](img/project_design.png)
+    ![Project Design](img/project_design.png)
 
 ## Dataset Utilization
 
@@ -25,27 +25,27 @@ With the evolution of the music industry from physical CDs to cloud-based stream
 - **Collaborative Filtering:**     
   - **ALS:** Using ALS to analyze user listening history and preferences, forming the foundation of the 
   recommendation system. Used ALS algorithm provided by Pyspark
-  ![Collaborative Filtering](img/collaborative_filtering.png)
+    ![Collaborative Filtering](img/collaborative_filtering.png)
 
   - **Neural Collaborative Filtering:** Designed a feedforward autoencoder architecture to map user-item interactions to a lower-dimensional latent space, reconstructing the original matrix for effective song recommendations. Leveraged Elephas Framework for distributed Neural Network on Pyspark
-  ![Autoencoders for Recommendation](img/autoencoder_cf.png)
-  ![Elephas + Pyspark](img/elephas+pyspark.png)
+    ![Autoencoders for Recommendation](img/autoencoder_cf.png)
+    ![Elephas + Pyspark](img/elephas+pyspark.png)
 
 - **Content-Based Filtering:**
   - **TF-IDF:** Highlighting unique song characteristics by emphasizing distinctive lyrics or metadata.
   - **Word2Vec:** Creating vector representations of songs to capture semantic relationships and recommend songs based on similarity.
   - **LDA Topic Modeling:** Identifying thematic patterns in songs, adding a nuanced layer to the recommendation system.
-  ![Content Based Filtering](img/content_based.png)
+    ![Content Based Filtering](img/content_based.png)
 
  - **Distance Metric:** Locality Sensitive Hashing was used instead of Cosine Similiarity for measuring simliarity on Pyspark
-  ![Why LSH?](img/why_lsh.png)
+    ![Why LSH?](img/why_lsh.png)
 
 
 ## Results and Observations
 
 - **Recommendation Strategy:** Calculating user-item interaction scores in the latent space to rank and recommend top-N items to users.
-![Content Based Results](img/content_based_results.png)
-![Collaborative Filtering Results](img/collaborative_filtering_results.png)
+    ![Content Based Results](img/content_based_results.png)
+    ![Collaborative Filtering Results](img/collaborative_filtering_results.png)
 
 - **Evaluation:** The absence of ground truth labels posed a challenge in objectively assessing the system's effectiveness, underscoring the need for a method to acquire such labels, perhaps through user feedback.
 
