@@ -2,7 +2,7 @@
 
 This repository is dedicated to the Music Recommendation System project, a comprehensive system designed for personalized music recommendation. It incorporates state-of-the-art algorithms and large-scale data processing to address the intricate challenges of music recommendation in the era of digital streaming. 
 
-Project Team: Sandeep Yerra and Pranav Sukumaran
+**Project Team:** Sandeep Yerra and Pranav Sukumaran
 
 ## Introduction
 
